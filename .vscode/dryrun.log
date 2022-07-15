@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/anas/1337/ft_containers'
+c++ -c main.cpp
+c++ main.cpp -o exe
+make: Leaving directory '/home/anas/1337/ft_containers'
+ 
