@@ -3,7 +3,7 @@
 NAME	= exe
 SRC		= main.cpp
 OBJ		= main.o
-HEADER	= ./map/RBTree.hpp ./map/pair.hpp
+HEADER	= ./map/RBTree.hpp ./map/pair.hpp ./map/map.hpp
 CC		= c++
 
 $(NAME)	: $(OBJ) $(HEADER)
@@ -12,7 +12,7 @@ $(NAME)	: $(OBJ) $(HEADER)
 all		: $(NAME)
 	
 
-%.o	: %.cpp
+%.o	: %.cpp $(HEADER) 
 	$(CC) -c $<
 
 clean	:
@@ -22,3 +22,5 @@ fclean	: clean
 	rm -rf $(NAME)
 
 re		: fclean all
+
+

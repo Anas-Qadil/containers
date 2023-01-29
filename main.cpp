@@ -2,6 +2,7 @@
 #include <iostream>
 #include "./map/RBTree.hpp"
 #include "./map/pair.hpp"
+#include "./map/map.hpp"
 
 // int main(void)
 // {
@@ -69,27 +70,31 @@
 // }
 
 
+// int main() {
+// 	ft::pair<int, char> p1(10, 'A');
+// 	std::cout << "p1: " << p1.first << ", " << p1.second << std::endl;
+
+// 	ft::pair<int, char> p2(20, 'B');
+// 	std::cout << "p2: " << p2.first << ", " << p2.second << std::endl;
+
+// 	ft::pair<int, char> p3 = ft::make_pair(30, 'C');
+// 	std::cout << "p3: " << p3.first << ", " << p3.second << std::endl;
+
+// 	if (p1 == p2) {
+// 		std::cout << "p1 and p2 are equal" << std::endl;
+// 	} else {
+// 		std::cout << "p1 and p2 are not equal" << std::endl;
+// 	}
+
+// 	if (p1 < p3) {
+// 		std::cout << "p1 is less than p3" << std::endl;
+// 	} else {
+// 		std::cout << "p1 is not less than p3" << std::endl;
+// 	}
+
+// 	return 0;
+// }
+
 int main() {
-	ft::pair<int, char> p1(10, 'A');
-	std::cout << "p1: " << p1.first << ", " << p1.second << std::endl;
-
-	ft::pair<int, char> p2(20, 'B');
-	std::cout << "p2: " << p2.first << ", " << p2.second << std::endl;
-
-	ft::pair<int, char> p3 = ft::make_pair(30, 'C');
-	std::cout << "p3: " << p3.first << ", " << p3.second << std::endl;
-
-	if (p1 == p2) {
-		std::cout << "p1 and p2 are equal" << std::endl;
-	} else {
-		std::cout << "p1 and p2 are not equal" << std::endl;
-	}
-
-	if (p1 < p3) {
-		std::cout << "p1 is less than p3" << std::endl;
-	} else {
-		std::cout << "p1 is not less than p3" << std::endl;
-	}
-
-	return 0;
+    ft::map<int, int> m1ap;
 }
