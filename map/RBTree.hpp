@@ -9,38 +9,17 @@
 namespace ft {
 	enum Color {RED, BLACK};
 
-	// template <typename Key, typename Value>
-	template < class T, class Compare = std::less< T >, class Alloc = std::allocator<T> > // check this
+	template <typename Key, typename Value>
 	struct Node {
 		ft::pair<const Key, Value> data;
 		Color color;
 		Node *left, *right, *parent;
-
-		typedef Alloc   										            allocator_type;
-		typedef Compare                                                     value_compare;
-		typedef typename allocator_type::reference                         reference;
-		typedef typename allocator_type::const_reference                   const_reference;
-		typedef typename allocator_type::pointer                           pointer;
-		typedef typename allocator_type::const_pointer                     const_pointer;
-		typedef typename allocator_type::difference_type                   difference_type;
-		typedef typename allocator_type::size_type                         size_type;
-
-		Compare _comp;
-		allocator_type	_alloc;
-
 
 		// constructor for a new node
 		Node(const ft::pair<const Key, Value> &data) : data(data) {
 			color = RED;
 			left = right = parent = NULL;
 		}
-
-		// check this
-		Node(const value_compare &comp, const allocator_type &alloc) : _comp(comp), _alloc(alloc) {
-			color = RED;
-			left = right = parent = NULL;
-		}
-
 	};
 
 	template <typename Key, typename Value>
