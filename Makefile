@@ -3,7 +3,7 @@
 NAME	= exe
 SRC		= main.cpp
 OBJ		= main.o
-HEADER	= ./map/RBTree.hpp
+HEADER	= ./map/RBTree.hpp ./map/pair.hpp
 CC		= c++
 
 $(NAME)	: $(OBJ) $(HEADER)
